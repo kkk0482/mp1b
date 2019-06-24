@@ -84,6 +84,8 @@ class homepage extends page {
 //table rendering of the csv data sets
 //loads into array
 //renders the datasets into a table stepwise
+
+/*
 class htmlTable extends page{
   public function get(){
   
@@ -110,4 +112,5 @@ fclose($file);
   
   }
 }
+*/
 ?>
