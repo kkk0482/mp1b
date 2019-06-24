@@ -21,7 +21,7 @@ class htmlTable extends page{
 			 }
           	$table . ='</table>';
 fclose($file);
-	print($table);
+	//print($table);
 	
 	}
 }
