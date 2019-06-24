@@ -3,7 +3,7 @@
 // gets the filename (ie. csv file) from the server and opens it for processing
 // loads the file into an array
 // puts the datasets ($data) form the array into the table class object
-class htmlTable extends page{
+class htmlTable1 extends page{
 	public function get(){
 	
 		$fname = $_REQUEST('filename');
@@ -21,7 +21,7 @@ class htmlTable extends page{
 			 }
           	$table . ='</table>';
 fclose($file);
-	//print($table);
+	print($table);
 	
 	}
 }
