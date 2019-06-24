@@ -85,10 +85,7 @@ class homepage extends page {
 //loads into array
 //renders the datasets into a table stepwise
 class htmlTable extends page{
-    /**
-     *
-     */
-    public function get(){
+  public function get(){
   
     $fname = $_REQUEST['filename'];
     $file = fopen("uploads/".$fname,"r");
@@ -99,9 +96,9 @@ $i=0;
       while(! feof($file))
        {
          $data= fgetcsv($file);
-         $count=count($data);
+         $count_total=count($data);
          $table .='<tr>';
-         for($i=0;$i<$count;$i++){
+         for($i=0;$i<$count_total;$i++){
            $table .='<td>'.$data[$i].'</td>';
          }
          $table .='</tr>';        
