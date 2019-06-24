@@ -85,7 +85,10 @@ class homepage extends page {
 //loads into array
 //renders the datasets into a table stepwise
 class htmlTable extends page{
-  public function get(){
+    /**
+     *
+     */
+    public function get(){
   
     $fname = $_REQUEST['filename'];
     $file = fopen("uploads/".$fname,"r");
