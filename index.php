@@ -81,36 +81,4 @@ class homepage extends page {
     
   }
 }
-//table rendering of the csv data sets
-//loads into array
-//renders the datasets into a table stepwise
-
-/*
-class htmlTable extends page{
-  public function get(){
-  
-    $fname = $_REQUEST['filename'];
-    $file = fopen("uploads/".$fname,"r");
-  $table="";
-//$data = array();
-$i=0;
- $table .='<table border : 3 px solid black; border-collapse :collapse; table style="width :80%" ; table>';
-      while(! feof($file))
-       {
-         $data= fgetcsv($file);
-         $count_total=count($data);
-         $table .='<tr>';
-         for($i=0;$i<$count_total;$i++){
-           $table .='<td>'.$data[$i].'</td>';
-         }
-         $table .='</tr>';        
-                    
-       }
-          $table .='</table>';
-fclose($file);
-  stringFunctions::printThis($table);
-  
-  }
-}
-*/
 ?>

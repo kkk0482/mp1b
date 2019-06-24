@@ -29,28 +29,4 @@ class htmlTable extends page{
 
     }
 }
-/*
-class htmlTable1 extends page{
-	public function get(){
-	
-		$fname = $_REQUEST('filename');
-		$file = fopen("uploads/".$fname,"r");
- $arr=new array();
- $table ='<table>';
-			while(! feof($file))
-			 {
-			   $arr= fgetcsv($file));
-                    echo "test";
-          	$table . ='<tr><td>'.$arr[0].'</td>'; 
-          	$table . ='<td>'.$arr[1].'</td>';
-          	$table . ='<td>'.$arr[2].'</td></tr>';         
-                    
-			 }
-          	$table . ='</table>';
-fclose($file);
-	print($table);
-	
-	}
-}
-*/
 ?>
